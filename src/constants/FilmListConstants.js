@@ -1,0 +1,4 @@
+export const FILM_NAME_LOADING = "FILM_NAME_LOADING";
+export const FILM_NAME_FAIL = "FILM_NAME_FAIL";
+export const FILM_NAME_SUCCESS = "FILM_NAME_SUCCESS";
+

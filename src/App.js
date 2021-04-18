@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {Container, Navbar, ListGroup, Button} from "react-bootstrap";
+import React from "react";
+import {Switch, Route, Redirect} from "react-router-dom";
+import CharacterList from './components/CharacterList';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CharacterDetail from './components/CharacterDetail';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Navbar expand="lg" variant="light" bg="light">
+          <Container>
+          <Navbar.Brand href="/">Star Wars Catalogue</Navbar.Brand>
+          </Container>      
+      </Navbar>
+
+    <Switch>
+      <Route path="/" exact component={CharacterList} />
+      <Route path="/details/:index" exact component={CharacterDetail} />
+    </Switch>
     </div>
   );
 }
