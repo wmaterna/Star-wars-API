@@ -9,7 +9,6 @@ import { GetCharacterList} from "../actions/CharacterActions";
 
 
 function CharacterListScreen(){
-
     const charList = useSelector(state => state.CharacterList);
     const dispatch = useDispatch();
     const [visible, setVisible] = useState(5);

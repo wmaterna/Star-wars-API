@@ -2,9 +2,6 @@
   color: black;
   cursor: pointer;
 }
-/* .card-item {
-  margin: 3% 0;
-} */
 .show-more-btn {
   margin: 5% 0;
 }
@@ -14,13 +11,4 @@
 }
 .go-back-btn {
   margin-top: 5%;
-}
-
-@media (max-width: 600px) {
-  /* .card-item {
-    margin-left: 10%;
-  } */
-  /* .more-info {
-    margin-left: 0;
-  }  */
 }

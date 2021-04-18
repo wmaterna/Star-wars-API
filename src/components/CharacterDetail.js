@@ -18,8 +18,6 @@ function CharacterDetail(props) {
         ShowData()  
       }, []);
 
-
-
     const ShowData = () => {
         if (!_.isEmpty(character.data)) {
           return(

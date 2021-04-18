@@ -1,7 +1,7 @@
 import './App.css';
-import {Container, Navbar, ListGroup, Button} from "react-bootstrap";
+import {Container, Navbar} from "react-bootstrap";
 import React from "react";
-import {Switch, Route, Redirect} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 import CharacterList from './components/CharacterList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CharacterDetail from './components/CharacterDetail';
@@ -19,6 +19,7 @@ function App() {
       <Route path="/" exact component={CharacterList} />
       <Route path="/details/:index" exact component={CharacterDetail} />
     </Switch>
+    
     </div>
   );
 }
